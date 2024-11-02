@@ -1,0 +1,17 @@
+@startuml
+start
+:Clear previous global plan;
+:Validate the new plan;
+
+if (Valid plan) then (yes)
+  :Prune the new plan;
+  :Set the first goal state;
+  :Initialize goal flags;
+  :Set goal reached to false;
+  :Publish target point;
+else (no)
+  :Return failure;
+endif
+
+stop
+@enduml

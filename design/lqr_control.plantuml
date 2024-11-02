@@ -1,0 +1,18 @@
+start
+
+:Retrieve current state (s);
+:Retrieve desired state (s_d);
+:Retrieve control input (u_r);
+
+if (State error) then (yes)
+  :Compute state error e = s_d - s;
+  :Compute control law using LQR;
+  :u = -K * e + u_r;
+else (no)
+  :Maintain current control input;
+endif
+
+:return computed control u;
+
+stop
+

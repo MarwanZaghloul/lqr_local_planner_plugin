@@ -1,0 +1,9 @@
+<class_libraries>
+    <library path="lqr_local_planner">
+        <class type="lqr_local_planner::LQRLocalPlanner" base_class_type="nav2_core::Controller">
+            <description>
+                nav2_lqr_local_planner
+            </description>
+        </class>
+    </library>
+</class_libraries>
